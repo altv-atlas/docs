@@ -23,6 +23,11 @@
     }
   ],
   "build": {
+    "globalMetadata": {
+      "_appTitle": "Project Icarus",
+      "_appLogoPath": "images/logo.svg",
+      "_appFaviconPath": "images/favicon.ico"
+    },
     "content": [
       {
         "files": [

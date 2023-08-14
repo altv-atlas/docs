@@ -1,6 +1,7 @@
-# Project Icarus: Elevating alt:V Multiplayer Development
+# Project Icarus
 
 *Developed by Niels and Kaiwoknats*
+
 *Docs partially written by our free intern ChatGPT :)*
 
 **Project Icarus** is a framework targetted at making it easier for developers to get started with alt:V Multiplayer. As of right now we only offer server-side packages written in C#. 
@@ -20,7 +21,7 @@ Project Icarus is designed to ease your initiation into alt:V MP. By providing a
 | Module  | Version |
 | ------------- | ------------- |
 | [**AltV.Icarus.Commands**](https://github.com/altv-icarus/Commands)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Commands?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Commands/) |
-|| [**AltV.Icarus.Chat**](https://github.com/altv-icarus/Chat)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Chat?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Chat/) |
+| [**AltV.Icarus.Chat**](https://github.com/altv-icarus/Chat)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Chat?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Chat/) |
 | [**AltV.Icarus.IoC**](https://github.com/altv-icarus/IoC)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.IoC?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.IoC/) |
 
 Each module can be used completely independent from the rest, or used together in 1 project. It's entirely up to you.

@@ -42,6 +42,8 @@
     "resource": [
       {
         "files": [
+          "images/logo.svg",
+          "images/favicon.ico",
           "images/**"
         ]
       }

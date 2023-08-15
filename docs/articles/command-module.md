@@ -7,10 +7,9 @@ The command module offers a quick and easy implementation to handle commands in 
 This module requires you to have some kind of dependency injection set up in your project that uses the [Microsoft's Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection).
 
 Not sure how to implement that? We've got you covered! Our [boilerplate](https://github.com/altv-icarus/Boilerplate) has everything you need to get started.
-
+***
 ## Getting started
 
-### Adding the module
 Start by installing the latest version from Nuget.
 
 [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Commands?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Commands/)

@@ -1,2 +1,4 @@
 - name: Introduction
   href: intro.md
+- name: Command Module
+  href: command-module.md

@@ -25,7 +25,7 @@
   "build": {
     "globalMetadata": {
       "_appTitle": "Project Icarus",
-      "_appLogoPath": "images/logo.svg",
+      "_appLogoPath": "images/logo.png",
       "_appFaviconPath": "images/favicon.ico"
     },
     "content": [
@@ -47,7 +47,7 @@
     "resource": [
       {
         "files": [
-          "images/logo.svg",
+          "images/logo.png",
           "images/favicon.ico",
           "images/**"
         ]

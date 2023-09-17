@@ -27,7 +27,14 @@ builder.ConfigureServices( (context, services) =>
     
 var host = builder.UseConsoleLifetime( ).Build( );
 host.Services.InitializeCommandModule( ); // <-- Initialize the command module
+
+await host.RunAsync();
 ```
+
+#### Modifications
+By default the event for sending/receiving commands is set to the default ``chat:message``. However, this can easily be changed by passing your own event name as second parameter to ``RegisterCommandModule``.
+
+The command prefix is set to ``/`` by default, but this can be changed as well by passing it as the third parameter to ``RegisterCommandModule``.
 
 ## Examples
 
@@ -115,4 +122,4 @@ public class SpawnVehicleCommand : IExtendedCommand
 ## Class Diagram
 For a better understanding of how our library works behind the scenes, please have a look at our class diagram below and/or check out [the repository](https://github.com/altv-icarus/Commands).
 
-![Class Diagram](../images/commands-module.png)
+![Class Diagram](../images/command-module.png)

@@ -37,10 +37,8 @@ By default the event for sending/receiving chat messages is set to the default `
 The command prefix is set to ``/`` by default, but this can be changed as well by passing it as the third parameter to ``RegisterChatModule``.
 NOTE: This module does NOT handle commands. The only reason it has the command prefix parameter is so it can properly verify whether the incoming message is a command or a message.
 
-## Examples
-
-### Hooking into chat messages
-Great! You're all set. Now all that is left is to hook into the chat events.
+## Example usage
+All that is left now is to hook into the chat events.
 For reference, the following example is taken directly from our ``AltV.Icarus.Boilerplate`` project.
 
 ```cs
@@ -53,12 +51,18 @@ public class OnChatMessageEvent
     {
         _chat = chat;
         _chat.OnChatMessage += OnChatMessage;
+        _chat.OnChatMessageAsync += OnChatMessageAsync; // for async stuff
     }
 
     // Triggered whenever any player has sent a message in the chat
     private void OnChatMessage( IPlayer player, string message )
     {
         player.SendChatMessageToAll( message ); // Send the message to everyone in the server (global chat example)
+    }
+
+    private Task OnChatMessageAsync(IPlayer player, string message)
+    {
+        // do async stuff here.
     }
 }
 ```
@@ -69,6 +73,7 @@ public class OnChatMessageEvent
 Does our ``IChat`` interface not contain all the required properties you need?
 
 *Advanced chat module is a future addition and thus not yet implemented.*
+
 Our advanced chat module contains more features such as but not limited to:
 - Unlimited amount of chats (eg chat channels, private chats, group chats, police radio chats, etc), possibilities are endless.
 - Colorized messages.

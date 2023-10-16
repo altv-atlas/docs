@@ -33,10 +33,10 @@ jobs:
 
       - run: dotnet tool update -g docfx
 
-      # Clone icarus repositories
-      - run: git clone https://github.com/altv-icarus/Commands.git docs/src/AltV.Icarus.Commands
-      - run: git clone https://github.com/altv-icarus/IoC.git docs/src/AltV.Icarus.IoC
-      - run: git clone https://github.com/altv-icarus/Chat.git docs/src/AltV.Icarus.Chat
+      # Clone atlas repositories
+      - run: git clone https://github.com/altv-atlas/Commands.git docs/src/AltV.Atlas.Commands
+      - run: git clone https://github.com/altv-atlas/IoC.git docs/src/AltV.Atlas.IoC
+      - run: git clone https://github.com/altv-atlas/Chat.git docs/src/AltV.Atlas.Chat
 
       - run: docfx docs/docfx.json
 

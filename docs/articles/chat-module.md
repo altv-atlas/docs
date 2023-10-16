@@ -6,13 +6,13 @@ The chat module offers a quick and easy implementation to handle chat messages i
 
 This module requires you to have some kind of dependency injection set up in your project that uses the [Microsoft's Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection).
 
-Not sure how to implement that? We've got you covered! Our [boilerplate](https://github.com/altv-icarus/Boilerplate) has everything you need to get started.
+Not sure how to implement that? We've got you covered! Our [boilerplate](https://github.com/altv-atlas/Boilerplate) has everything you need to get started.
 ***
 ## Getting started
 
 Start by installing the latest version from Nuget.
 
-[![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Chats?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Chat/)
+[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Chats?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Chat/)
 
 
 ### Initialization
@@ -39,10 +39,10 @@ NOTE: This module does NOT handle commands. The only reason it has the command p
 
 ## Example usage
 All that is left now is to hook into the chat events.
-For reference, the following example is taken directly from our ``AltV.Icarus.Boilerplate`` project.
+For reference, the following example is taken directly from our ``AltV.Atlas.Boilerplate`` project.
 
 ```cs
-[Injectable(InstantiateOnBoot = true)] // Ensure this class is instantiated on startup (part of AltV.Icarus.IoC)
+[Injectable(InstantiateOnBoot = true)] // Ensure this class is instantiated on startup (part of AltV.Atlas.IoC)
 public class OnChatMessageEvent
 {
     private readonly IChat _chat; // The chat instance
@@ -81,9 +81,9 @@ Our advanced chat module contains more features such as but not limited to:
 - Add custom tags to messages and channels.
 - Highlighting areas of a message when eg a group or player is mentioned.
 
-*Not what you were looking for? Our [boilerplate](https://github.com/altv-icarus/Boilerplate) contains a lot of examples that may help you further.*
+*Not what you were looking for? Our [boilerplate](https://github.com/altv-atlas/Boilerplate) contains a lot of examples that may help you further.*
 
 ## Class Diagram
-For a better understanding of how our library works behind the scenes, please have a look at our class diagram below and/or check out [the repository](https://github.com/altv-icarus/Chat).
+For a better understanding of how our library works behind the scenes, please have a look at our class diagram below and/or check out [the repository](https://github.com/altv-atlas/Chat).
 
 ![Class Diagram](../images/chat-module.png)

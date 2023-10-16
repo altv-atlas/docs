@@ -2,9 +2,9 @@
 
 | Module  | Version |
 | ------------- | ------------- |
-| [**AltV.Icarus.Commands**](https://github.com/altv-icarus/Commands)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Commands?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Commands/) |
-| [**AltV.Icarus.Chat**](https://github.com/altv-icarus/Chat)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.Chat?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.Chat/) |
-| [**AltV.Icarus.IoC**](https://github.com/altv-icarus/IoC)  | [![nuget](https://img.shields.io/nuget/v/AltV.Icarus.IoC?style=for-the-badge)](https://www.nuget.org/packages/AltV.Icarus.IoC/) |
+| [**AltV.Atlas.Commands**](https://github.com/altv-atlas/Commands)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Commands?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Commands/) |
+| [**AltV.Atlas.Chat**](https://github.com/altv-atlas/Chat)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Chat?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Chat/) |
+| [**AltV.Atlas.IoC**](https://github.com/altv-atlas/IoC)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.IoC?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.IoC/) |
 
 Each module can be used completely independent from the rest, or used together in 1 project. It's entirely up to you.
 
@@ -14,7 +14,7 @@ Looking for something more? Have a look at our **premium modules**. Subscribing 
 
 ## Boilerplate
 
-Not sure where to get started? We offer a plug-and-play [boilerplate](https://github.com/altv-icarus/Boilerplate) C# project that can get you started right away!
+Not sure where to get started? We offer a plug-and-play [boilerplate](https://github.com/altv-atlas/Boilerplate) C# project that can get you started right away!
 Simply clone the project, follow the installation instructions, and run around in-game within minutes!
 
 The boilerplate includes examples from several of our modules and incorporates Dependency Injection (DI) through Microsoft's Dependency Injection and custom extensions in our IoC package.

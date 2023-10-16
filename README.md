@@ -1,5 +1,5 @@
-# Documentation for project icarus
+# Documentation for project atlas
 
-This repository contains the source-code for the Project Icarus documentation.
+This repository contains the source-code for the Project Atlas documentation.
 
-For generated docs, please visit: https://altv-icarus.github.io/docs/
+For generated docs, please visit: https://altv-atlas.github.io/docs/

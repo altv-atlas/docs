@@ -12,7 +12,7 @@ Not sure how to implement that? We've got you covered! Our [boilerplate](https:/
 
 Start by installing the latest version from Nuget.
 
-[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Chats?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Chat/)
+[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Chat?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Chat/)
 
 
 ### Initialization

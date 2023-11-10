@@ -23,6 +23,8 @@ Project Atlas is designed to ease your initiation into alt:V MP. By providing a 
 | [**AltV.Atlas.Commands**](https://github.com/altv-atlas/Commands)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Commands?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Commands/) |
 | [**AltV.Atlas.Chat**](https://github.com/altv-atlas/Chat)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Chat?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Chat/) |
 | [**AltV.Atlas.IoC**](https://github.com/altv-atlas/IoC)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.IoC?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.IoC/) |
+| [**AltV.Atlas.Peds**](https://github.com/altv-atlas/Peds)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Peds?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Peds/) |
+| [**AltV.Atlas.Vehicles**](https://github.com/altv-atlas/Vehicles)  | [![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Vehicles?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Vehicles/) |
 
 Each module can be used completely independent from the rest, or used together in 1 project. It's entirely up to you.
 

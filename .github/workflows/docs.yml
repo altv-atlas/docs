@@ -33,10 +33,12 @@ jobs:
 
       - run: dotnet tool update -g docfx
 
+      - run: ls -lah
+
       # Clone atlas repositories
       - run: git clone https://github.com/altv-atlas/Commands.git docs/src/AltV.Atlas.Commands
       - run: git clone https://github.com/altv-atlas/Chat.git docs/src/AltV.Atlas.Chat
-      
+
       - run: git clone https://github.com/altv-atlas/IoC.git docs/src/AltV.Atlas.IoC
       - run: git clone https://github.com/altv-atlas/Client.Configuration.git docs/src/AltV.Atlas.Client.Configuration
       

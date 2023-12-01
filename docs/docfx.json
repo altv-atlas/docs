@@ -16,9 +16,10 @@
       ],
       "dest": "api",
       "disableGitFeatures": false,
+      "allowCompilationErrors": true,
       "disableDefaultFilter": false,
       "properties": {
-        "TargetFramework": "net7.0"
+        "TargetFramework": "net8.0"
       }
     }
   ],

@@ -2,12 +2,7 @@
 
 The chat module offers a quick and easy implementation to handle chat messages in your alt:V server.
 
-## Requirements
-
-This module requires you to have some kind of dependency injection set up in your project that uses the [Microsoft's Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection).
-
-Not sure how to implement that? We've got you covered! Our [boilerplate](https://github.com/altv-atlas/Boilerplate) has everything you need to get started.
-***
+[!INCLUDE [requirements](~/includes/requirements.md)]
 ## Getting started
 
 Start by installing the latest version from Nuget.
@@ -70,7 +65,7 @@ public class OnChatMessageEvent
 ## Extending the library
 *Note: For a better understanding of how our library works behind the scenes, please have a look at our class diagram below.*
 
-Does our ``IChat`` interface not contain all the required properties you need?
+<!-- Does our ``IChat`` interface not contain all the required properties you need?
 
 *Advanced chat module is a future addition and thus not yet implemented.*
 
@@ -79,7 +74,7 @@ Our advanced chat module contains more features such as but not limited to:
 - Colorized messages.
 - Ability to extend the existing functionality to your own needs.
 - Add custom tags to messages and channels.
-- Highlighting areas of a message when eg a group or player is mentioned.
+- Highlighting areas of a message when eg a group or player is mentioned. -->
 
 *Not what you were looking for? Our [boilerplate](https://github.com/altv-atlas/Boilerplate) contains a lot of examples that may help you further.*
 

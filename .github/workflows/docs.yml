@@ -35,10 +35,18 @@ jobs:
 
       # Clone atlas repositories
       - run: git clone https://github.com/altv-atlas/Commands.git docs/src/AltV.Atlas.Commands
-      - run: git clone https://github.com/altv-atlas/IoC.git docs/src/AltV.Atlas.IoC
       - run: git clone https://github.com/altv-atlas/Chat.git docs/src/AltV.Atlas.Chat
-      - run: git clone https://github.com/altv-atlas/Chat.git docs/src/AltV.Atlas.Peds
-      - run: git clone https://github.com/altv-atlas/Chat.git docs/src/AltV.Atlas.Vehicles
+      
+      - run: git clone https://github.com/altv-atlas/IoC.git docs/src/AltV.Atlas.IoC
+      - run: git clone https://github.com/altv-atlas/Client.Configuration.git docs/src/AltV.Atlas.Client.Configuration
+      
+      - run: git clone https://github.com/altv-atlas/Peds.git docs/src/AltV.Atlas.Peds
+      - run: git clone https://github.com/altv-atlas/Peds.Client.git docs/src/AltV.Atlas.Peds.Client
+      - run: git clone https://github.com/altv-atlas/Peds.Shared.git docs/src/AltV.Atlas.Peds.Shared
+      
+      - run: git clone https://github.com/altv-atlas/Vehicles.Server.git docs/src/AltV.Atlas.Vehicles.Server
+      - run: git clone https://github.com/altv-atlas/Vehicles.Client.git docs/src/AltV.Atlas.Vehicles.Client
+      - run: git clone https://github.com/altv-atlas/Vehicles.Shared.git docs/src/AltV.Atlas.Vehicles.Shared
 
       - run: docfx docs/docfx.json
 

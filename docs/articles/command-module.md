@@ -2,7 +2,7 @@
 
 The command module offers a quick and easy implementation to handle commands in your alt:V server.
 
-[!INCLUDE [requirements](~/includes/partials/requirements.md)]
+[!INCLUDE [requirements](~/includes/requirements.md)]
 ## Getting started
 
 Start by installing the latest version from Nuget.
@@ -21,7 +21,7 @@ builder.ConfigureServices( (context, services) =>
 } );
     
 var host = builder.UseConsoleLifetime( ).Build( );
-host.Services.InitializeCommandModule( ); // <-- Initialize the command module
+_ = host.Services.InitializeCommandModule( ); // <-- Initialize the command module
 
 await host.RunAsync();
 ```

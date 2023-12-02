@@ -26,6 +26,24 @@ builder.ConfigureServices( (context, services) =>
 } );
     
 var host = builder.UseConsoleLifetime( ).Build( );
+_ = host.Services.InitializeVehicleModule( ); // <-- Initialize the vehicle module
+
+await host.RunAsync();
+```
+
+### ONLY Server-side
+If you consider extending the ``AtlasVehicleFactory`` dont forget to use the following overload:
+
+```cs
+var builder = Host.CreateDefaultBuilder( );
+
+builder.ConfigureServices( (context, services) =>
+{
+    services.RegisterVehicleModule<ExtendedVehicleFactory>( ); // <--- Register the vehicle module with your own factory
+} );
+    
+var host = builder.UseConsoleLifetime( ).Build( );
+_ = host.Services.InitializeVehicleModule( ); // <-- Initialize the vehicle module
 
 await host.RunAsync();
 ```
@@ -43,9 +61,12 @@ public override IEntityFactory<IVehicle> GetVehicleFactory( )
 ## Using the module
 In the vehicle module you have three implementations from us right out of the box which are as follows:
 
-* AtlasBaseVehicle
-* AtlasTuningVehicle
-* AtlasPlayerVehicle
+| Class  | Description  | Link |
+| ------------- | ------------- |
+| AtlasBaseVehicle | Default implementation with some extra functions and properties | https://github.com/altv-atlas/Vehicles.Server/blob/master/AltV/Entities/AtlasVehicleBase.cs |
+| AtlasTuningVehicle | Offers additional functions and properties that make tuning easier | https://github.com/altv-atlas/Vehicles.Server/blob/master/Entities/AtlasTuningVehicle.cs |
+| AtlasPlayerVehicle | Offers a properie to determin an owner | https://github.com/altv-atlas/Vehicles.Server/blob/master/Entities/AtlasPlayerVehicle.cs |
+
 
 You can use those if they are fitting your needs or extend them as you can see in the following step.
 
@@ -82,4 +103,31 @@ You can also inherit from our other vehicle implementations this is just an exam
 You can also extend our default vehicle factory so you can add your own methods to create vehicles
 
 > [!NOTE]
-> If you want to extend the factory you should have your own vehicle class and register it as the default creation type in the RegisterVehicleModule method via one of its overloads!
+> If you extend the base vehicle factory dont forget to use the ``RegisterVehicleModule<ExtendedVehicleFactory>`` overload to register the module as stated above!
+>(~/articles/vehicle-module.md#Initialization)
+
+
+```cs
+using AltV.Atlas.Vehicles.Server.Factories;
+using AltV.Net;
+using AltV.Net.Data;
+using Microsoft.Extensions.Logging;
+namespace AltV.Atlas.Boilerplate.Server.Features.Vehicles.Overrides;
+
+public class ExtendedVehicleFactory( ILogger<AtlasVehicleFactory> logger, IServiceProvider serviceProvider ) : AtlasVehicleFactory( logger, serviceProvider )
+{
+    public async Task<ExtendedVehicle> CreateVehicleAsync( string model, Position position, Rotation rotation )
+    {
+        var vehicle = await CreateVehicleAsync<ExtendedVehicle>( Alt.Hash( model ), position, rotation );
+        vehicle.NumberPlate = "We extended it";
+
+        return vehicle;
+    }
+}
+```
+
+> [!IMPORTANT]
+> You have to use the ``CreateVehicleAsync`` from the base factory for inheritance to work!
+
+### Examples
+You can find examples for all our modules in our boilerplates [client-side](https://github.com/altv-atlas/Boilerplate/tree/master/AltV.Atlas.Boilerplate.Client) and [server-side](https://github.com/altv-atlas/Boilerplate/tree/master/AltV.Atlas.Boilerplate.Server)

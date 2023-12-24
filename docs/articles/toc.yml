@@ -16,3 +16,7 @@
   href: client-configuration-module.md
 - name: Shared Module
   href: shared-module.md
+- name: Key Inputs Module
+  href: key-inputs-module.md
+- name: Scaleforms Module
+  href: scaleforms-module.md

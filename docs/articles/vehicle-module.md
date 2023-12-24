@@ -8,8 +8,8 @@ The vehicle module offer a base implementation of DI usage and Factories to crea
 Start by installing the latest version from Nuget.
 You will need to install both server-side and client-side packages for the module to work properly.
 
-[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Peds?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Vehicles.Server/)
-[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Peds.Client?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Vehicles.Client/)
+[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Vehicles.Server?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Vehicles.Server/)
+[![nuget](https://img.shields.io/nuget/v/AltV.Atlas.Vehicles.Client?style=for-the-badge)](https://www.nuget.org/packages/AltV.Atlas.Vehicles.Client/)
 
 ### Initialization
 A quick and simple example:
